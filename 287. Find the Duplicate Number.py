@@ -16,3 +16,8 @@ Example 2:
 Input: nums = [3,1,3,4,2]
 Output: 3
 '''
+nums.sort()
+for i in range(0,len(nums)):
+    if nums[i]==nums[i+1]:
+        return nums[i]
+        
