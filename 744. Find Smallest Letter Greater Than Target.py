@@ -22,11 +22,10 @@ Output: "x"
 Explanation: There are no characters in letters that is lexicographically greater than 'z' so we return letters[0].
 '''
 def nextGreatestLetter(letters,target):
-        out=[]
-        for i in letters:
-            if ord(i)>ord(target):
-                out.append(i)
-        if out==[]:
+        if ord(target)>=ord(letters[-1]):
             return letters[0]
-        return out[0]
+        else:
+            for i in letters:
+                if ord(i)>ord(target):
+                    return i
 print(nextGreatestLetter(letters = ["x","x","y","y"], target = "z"))
