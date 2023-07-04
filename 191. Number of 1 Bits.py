@@ -29,4 +29,4 @@ def hammingWeight(n):
         if n & 1: count += 1
         n = n >> 1
     return count
-print(hammingWeight(bin(31)))
+print(hammingWeight(31))
